@@ -1,15 +1,17 @@
 {
   "name": "json-server-app",
   "version": "1.0.0",
+  "description": "A simple JSON Server for testing purposes",
   "main": "index.js",
   "scripts": {
+    "start": "cross-env PORT=${PORT:-3000} json-server --watch db.json --port $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "json-server": "^1.0.0-beta.1"
   }
 }
